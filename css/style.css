@@ -88,11 +88,6 @@ ul {
   display: flex;
 }
 
-.sidebar {
-  width: var(--sidebar-width);
-  background-color: black;
-}
-
 .main-content {
   width: calc(100% - var(--sidebar-width));
 }
@@ -111,4 +106,46 @@ ul {
 .player {
   height: var(--player-height);
   background-color: #282828;
+}
+
+/* SIDEBAR  */
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-logo,
+.sidebar-home,
+.sidebar-search,
+.sidebar-library {
+  width: 30px;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar-top {
+  margin-top: 0.5rem;
+}
+
+.sidebar-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  background-image: url(../spotify/img/profile.svg);
+  background-size: cover;
+  margin-top: 0.5rem;
+}
+
+.sidebar-download {
+  width: 20px;
+  margin: 0 auto;
+}
+
+.sidebar-bottom {
+  margin-bottom: 0.5rem;
 }
