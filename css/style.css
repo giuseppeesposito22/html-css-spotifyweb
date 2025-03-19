@@ -1,3 +1,9 @@
+:root {
+  --player-height: 100px;
+  --sidebar-width: 60px;
+  --top-bar-height: 100px;
+}
+
 /* RESET */
 
 * {
@@ -72,8 +78,37 @@ ul {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: #141922;
 }
 
+/* TOP ELEMENT  */
+
+.main-element {
+  height: calc(100vh - var(--player-height));
+  display: flex;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: black;
+}
+
+.main-content {
+  width: calc(100% - var(--sidebar-width));
+}
+
+.top-bar {
+  height: var(--top-bar-height);
+  background-color: #080b12;
+}
+
+.content {
+  height: calc(100% - var(--top-bar-height));
+}
+
+/* PLAYER  */
+
 .player {
-  height: 300px;
+  height: var(--player-height);
+  background-color: #282828;
 }
