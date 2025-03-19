@@ -126,14 +126,25 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  color: gray;
 }
 
-.logo,
+.sidebar-logo,
+.sidebar-home,
+.sidebar-search,
+.sidebar-library {
+  width: 30px;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+}
+
+/* .logo,
 .home,
 .search,
 .library {
   width: 30px;
 }
+
 
 .sidebar-home,
 .sidebar-library,
@@ -142,10 +153,43 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding-bottom: 0.5rem;
-}
+} */
 
 .sidebar-top {
   margin-top: 0.5rem;
+  width: 100%;
+}
+
+.sidebar-add-playlist {
+  width: 30px;
+}
+
+/* .sidebar-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  background-image: url(../spotify/img/profile.svg);
+  background-size: cover;
+  margin-top: 0.5rem;
+}
+.sidebar-download {
+  width: 20px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+} */
+
+.sidebar-bottom {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.sidebar-download {
+  width: 20px;
+  margin: 0 auto;
 }
 
 .sidebar-profile {
@@ -155,18 +199,13 @@ body {
   background-color: gray;
   background-image: url(../spotify/img/profile.svg);
   background-size: cover;
-  margin-top: 0.5rem;
-}
-
-.sidebar-download {
-  width: 20px;
   margin: 0 auto;
-
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
-.sidebar-bottom {
-  margin-bottom: 0.5rem;
+.sidebar-bottom-download {
+  padding-bottom: 1rem;
+}
+
+.sidebar-bottom-profile {
+  padding-top: 1rem;
 }

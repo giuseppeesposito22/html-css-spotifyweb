@@ -3,18 +3,58 @@
 @media screen and (min-width: 640px) {
   .sidebar {
     width: var(--sidebar-width-s);
-    align-items: start;
     padding: 1rem;
   }
 
+  .sidebar-logo,
+  .sidebar-home,
+  .sidebar-search,
+  .sidebar-library,
+  .sidebar-download,
+  .sidebar-profile,
+  .sidebar-add-playlist {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+
   .sidebar-logo {
-    width: 40px;
-    gap: 0.5rem;
+    width: 50px;
+  }
+
+  .sidebar-top-logo {
     padding-bottom: 2rem;
   }
 
-  .sidebar-logo span {
-    font-size: 1.5rem;
+  .d-inline-block {
+    display: inline-block;
+  }
+
+  #span-spotify {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .sidebar-bottom-download {
+    border-bottom: 1px solid;
+  }
+
+  #profile-name {
+    color: white;
+    font-weight: bold;
+  }
+
+  .sidebar-top-playlist h3 {
+    padding-top: 1rem;
+    color: white;
+  }
+
+  .sidebar-add-playlist {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .list-playlist-name li {
+    padding-bottom: 1rem;
   }
 
   .d-block {

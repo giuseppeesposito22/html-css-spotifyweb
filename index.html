@@ -22,42 +22,71 @@
       <div class="main-element">
         <!-- sidebar  -->
         <div class="sidebar">
+          <!--top sidebar  -->
+
           <div class="sidebar-top">
-            <div class="sidebar-logo">
-              <div class="logo">
+            <div class="sidebar-top-logo">
+              <div class="sidebar-logo d-inline-block">
                 <img src="./spotify/img/logo-small.svg" alt="" />
               </div>
-              <span class="d-none d-block">Spotify</span>
+              <span id="span-spotify" class="d-none d-inline-block"
+                >Spotify</span
+              >
             </div>
 
-            <div class="sidebar-home">
-              <div class="home">
+            <div class="sidebar-top-icon">
+              <div class="sidebar-home d-inline-block">
                 <img src="./spotify/img/home.svg" alt="" />
               </div>
-              <span class="d-none d-block">Home</span>
+              <span class="d-none d-inline-block">Home</span>
             </div>
 
-            <div class="sidebar-search">
-              <div class="search">
+            <div class="sidebar-top-icon">
+              <div class="sidebar-search d-inline-block">
                 <img src="./spotify/img/search.svg" alt="" />
               </div>
-              <span class="d-none d-block">Cerca</span>
+              <span class="d-none d-inline-block">Cerca</span>
             </div>
 
-            <div class="sidebar-library">
-              <div class="library">
+            <div class="sidebar-top-icon">
+              <div class="sidebar-library d-inline-block">
                 <img src="./spotify/img/libreria.svg" alt="" />
               </div>
-              <span class="d-none d-block">La tua libreria</span>
+              <span class="d-none d-inline-block">La tua libreria</span>
+            </div>
+
+            <div class="sidebar-top-playlist d-none d-block">
+              <h3>Playlist</h3>
+              <div class="sidebar-add-playlist d-inline-block">
+                <img src="./spotify/img/logo-small.svg" alt="" />
+              </div>
+              <span>Crea Playlist</span>
+              <ul class="list-playlist-name">
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+              </ul>
             </div>
           </div>
+          <!--top sidebar  -->
 
+          <!--bottom sidebar  -->
           <div class="sidebar-bottom">
-            <div class="sidebar-download">
-              <img src="./spotify/img/download.svg" alt="" />
-              <span class="d-none d-block">Installa app</span>
+            <div class="sidebar-bottom-download">
+              <div class="sidebar-download d-inline-block">
+                <img src="./spotify/img/download.svg" alt="" />
+              </div>
+              <span class="d-none d-inline-block">Installa app</span>
             </div>
-            <div class="sidebar-profile"></div>
+
+            <div class="sidebar-bottom-profile">
+              <div class="sidebar-profile d-inline-block"></div>
+              <span id="profile-name" class="d-none d-inline-block"
+                >John Doe</span
+              >
+            </div>
           </div>
         </div>
 
