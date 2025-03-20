@@ -140,17 +140,20 @@ body {
 
 #player .listening-music .save-music i {
   padding-left: 0.5rem;
+  display: block;
+  margin-top: 0.5rem;
 }
 
 #player .media-player {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-grow: 1;
+  max-width: 500px;
+  margin: 0 1rem;
 }
 
 #player .media-player .player-command {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -167,6 +170,29 @@ body {
 #player .player-bar {
   display: flex;
   width: 100%;
+}
+
+.volume .bar {
+  border: 2px solid white;
+}
+
+#player .volume {
+  display: flex;
+  align-items: center;
+
+  flex-grow: 1;
+  max-width: 200px;
+}
+
+#player .volume .volume-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#player .volume .volume-icon i,
+#player .volume .volume-bar i {
+  margin-right: 0.5rem;
 }
 
 /* SIDEBAR  */
