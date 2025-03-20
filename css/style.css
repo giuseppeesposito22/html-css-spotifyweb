@@ -191,6 +191,7 @@ body {
   height: 5px;
   background-color: white;
   width: 25%;
+  border-radius: 999px;
 
   display: flex;
   align-items: center;

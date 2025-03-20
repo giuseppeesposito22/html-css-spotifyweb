@@ -3,7 +3,7 @@
 @media screen and (min-width: 640px) {
   .sidebar {
     width: var(--sidebar-width-s);
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   .sidebar .logo-big {
@@ -68,5 +68,24 @@
 
   .d-block {
     display: block;
+  }
+
+  .sidebar-top-logo,
+  .sidebar-top-home,
+  .sidebar-top-search,
+  .sidebar-top-library,
+  .sidebar-top-playlist {
+    padding-left: 1rem;
+  }
+
+  .sidebar-bottom {
+    padding: 0 1rem;
+  }
+
+  .sidebar-top-search:hover,
+  .sidebar-top-library:hover,
+  .sidebar-top-home:hover {
+    border-left: 5px solid green;
+    padding-left: calc(1rem - 5px);
   }
 }
