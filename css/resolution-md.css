@@ -1,0 +1,11 @@
+/* RESOLUTION MD (768PX) */
+
+@media screen and (min-width: 768px) {
+  #player .listening-music .save-music i {
+    display: inline-block;
+  }
+
+  #player {
+    gap: 2rem;
+  }
+}

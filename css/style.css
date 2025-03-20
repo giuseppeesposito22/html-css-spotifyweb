@@ -118,6 +118,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
 #player .listening-music {
@@ -155,6 +156,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .media-player .player-command .fa-circle-play {
@@ -162,18 +164,52 @@ body {
   padding: 0 0.5rem;
 }
 
-.bar {
-  border: 3px solid white;
+.player-bar .bar {
+  height: 5px;
+  background-color: gray;
+  border-radius: 9999px;
   width: 100%;
 }
 
 #player .player-bar {
   display: flex;
   width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.player-bar .bar .time-bar:hover {
+  background-color: green;
+  cursor: pointer;
+
+  .pointer-time-bar {
+    display: block;
+  }
+}
+
+.player-bar .bar .time-bar {
+  height: 5px;
+  background-color: white;
+  width: 25%;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.pointer-time-bar {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
 }
 
 .volume .bar {
-  border: 2px solid white;
+  height: 5px;
+  background-color: gray;
+  border-radius: 9999px;
+  width: 100%;
 }
 
 #player .volume {
@@ -195,6 +231,12 @@ body {
   margin-right: 0.5rem;
 }
 
+.volume .volume-bar .volume-level {
+  height: 5px;
+  background-color: white;
+  width: 25%;
+}
+
 /* SIDEBAR  */
 
 .sidebar {
@@ -205,6 +247,10 @@ body {
   justify-content: space-between;
   align-items: center;
   color: gray;
+}
+
+.sidebar .logo-big {
+  display: none;
 }
 
 .sidebar-logo,
@@ -236,10 +282,6 @@ body {
 .sidebar-top {
   margin-top: 0.5rem;
   width: 100%;
-}
-
-.sidebar-add-playlist {
-  width: 30px;
 }
 
 /* .sidebar-profile {
@@ -286,4 +328,38 @@ body {
 
 .sidebar-bottom-profile {
   padding-top: 1rem;
+}
+
+.sidebar span:hover,
+.sidebar li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar-add-playlist:hover {
+  color: white;
+  cursor: pointer;
+
+  .square {
+    background-color: white;
+  }
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  background-color: gray;
+  color: black;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-add-playlist {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
 }

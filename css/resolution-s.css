@@ -6,6 +6,15 @@
     padding: 1rem;
   }
 
+  .sidebar .logo-big {
+    display: block;
+    width: 10rem;
+  }
+
+  .sidebar .logo-small {
+    display: none;
+  }
+
   .sidebar-logo,
   .sidebar-home,
   .sidebar-search,

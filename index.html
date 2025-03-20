@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/resolution-s.css" />
+    <link rel="stylesheet" href="./css/resolution-md.css" />
     <title>Spotify</title>
   </head>
   <body>
@@ -26,12 +27,17 @@
 
           <div class="sidebar-top">
             <div class="sidebar-top-logo">
-              <div class="sidebar-logo d-inline-block">
-                <img src="./spotify/img/logo-small.svg" alt="" />
+              <div class="sidebar-logo">
+                <img
+                  class="logo-small"
+                  src="./spotify/img/logo-small.svg"
+                  alt=""
+                />
               </div>
-              <span id="span-spotify" class="d-none d-inline-block"
+              <img class="logo-big" src="./spotify/img/logo.svg" alt="" />
+              <!-- <span id="span-spotify" class="d-none d-inline-block"
                 >Spotify</span
-              >
+              > -->
             </div>
 
             <div class="sidebar-top-icon">
@@ -57,10 +63,12 @@
 
             <div class="sidebar-top-playlist d-none d-block">
               <h3>Playlist</h3>
-              <div class="sidebar-add-playlist d-inline-block">
-                <img src="./spotify/img/logo-small.svg" alt="" />
+              <div class="sidebar-add-playlist">
+                <div class="square">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <span>Crea Playlist</span>
               </div>
-              <span>Crea Playlist</span>
               <ul class="list-playlist-name">
                 <li>Nome Playlist</li>
                 <li>Nome Playlist</li>
@@ -121,7 +129,11 @@
 
           <div class="player-bar">
             <span>0:25</span>
-            <div class="bar"></div>
+            <div class="bar">
+              <div class="time-bar">
+                <div class="pointer-time-bar"></div>
+              </div>
+            </div>
             <span>4:35</span>
           </div>
         </div>
@@ -133,7 +145,9 @@
           </div>
           <div class="volume-bar">
             <i class="fa-solid fa-volume-high"></i>
-            <div class="bar"></div>
+            <div class="bar">
+              <div class="volume-level"></div>
+            </div>
           </div>
         </div>
       </div>
