@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    /> -->
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/resolution-s.css" />
@@ -97,7 +97,37 @@
       </div>
 
       <!-- player  -->
-      <div class="player"></div>
+      <div id="player">
+        <div class="listening-music">
+          <img src="./spotify/img/sinister.jpeg" alt="" />
+          <div class="music-name">
+            <span class="text-artist-name">Sinister</span>
+            <span class="text-music-name">Brano nome</span>
+          </div>
+          <div class="save-music">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-folder"></i>
+          </div>
+        </div>
+
+        <div class="media-player">
+          <div class="player-command">
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-regular fa-circle-play"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-rotate-right"></i>
+          </div>
+
+          <div class="player-bar">
+            <span>0:25</span>
+            <div class="bar"></div>
+            <span>4:35</span>
+          </div>
+        </div>
+
+        <div class="volume"></div>
+      </div>
     </div>
   </body>
 </html>

@@ -112,9 +112,61 @@ body {
 
 /* PLAYER  */
 
-.player {
+#player {
   height: var(--player-height);
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#player .listening-music {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#player .listening-music .text-artist-name {
+  display: block;
+}
+
+#player .listening-music img {
+  width: 40px;
+}
+
+#player .listening-music .save-music {
+  margin-left: 0.5rem;
+}
+
+#player .listening-music .save-music i {
+  padding-left: 0.5rem;
+}
+
+#player .media-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#player .media-player .player-command {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.media-player .player-command .fa-circle-play {
+  font-size: 2rem;
+  padding: 0 0.5rem;
+}
+
+.bar {
+  border: 3px solid white;
+  width: 100%;
+}
+
+#player .player-bar {
+  display: flex;
+  width: 100%;
 }
 
 /* SIDEBAR  */
