@@ -26,7 +26,7 @@ ul {
 }
 
 body {
-  color: white;
+  color: gray;
 }
 
 /* UTILS */
@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-  max-width: 1180px;
+  /* max-width: 1180px; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
@@ -52,8 +52,8 @@ body {
   flex-wrap: wrap;
   row-gap: 2rem;
 
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 [class*="col"] {
@@ -106,8 +106,45 @@ body {
   background-color: #080b12;
 }
 
+/* CONTENT  */
 .content {
   height: calc(100% - var(--top-bar-height));
+  overflow: scroll;
+}
+
+.content .menu ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
+
+.content .menu li {
+  text-transform: uppercase;
+}
+
+#recently-played .col-1-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+#recently-played {
+  margin-top: 1rem;
+}
+
+#recently-played h2 {
+  margin-bottom: 2rem;
+  color: white;
+}
+
+#recently-played .name-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
 }
 
 /* PLAYER  */
