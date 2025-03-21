@@ -368,6 +368,8 @@ body {
   justify-content: space-between;
   align-items: center;
   color: gray;
+
+  overflow: hidden;
 }
 
 .sidebar .logo-big {
