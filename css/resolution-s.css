@@ -85,7 +85,7 @@
   .sidebar-top-search:hover,
   .sidebar-top-library:hover,
   .sidebar-top-home:hover {
-    border-left: 5px solid green;
+    border-left: 5px solid limegreen;
     padding-left: calc(1rem - 5px);
   }
 }
