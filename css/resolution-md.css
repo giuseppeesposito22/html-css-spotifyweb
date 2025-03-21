@@ -8,4 +8,16 @@
   #player {
     gap: 2rem;
   }
+
+  .content .col-1-2 {
+    width: 25%;
+  }
+}
+
+/* RESOLUTION LG (	≥992px) */
+
+@media screen and (min-width: 992px) {
+  .content .col-1-2 {
+    width: calc(100% / 6);
+  }
 }
