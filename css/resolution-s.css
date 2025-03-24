@@ -52,6 +52,10 @@
     font-weight: bold;
   }
 
+  .sidebar-top-playlist {
+    display: flex;
+  }
+
   .sidebar-top-playlist h3 {
     padding-top: 1rem;
     color: white;
